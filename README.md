@@ -28,11 +28,11 @@ Users should be able to:
 - See hover, active, and focus states for interactive elements on the page
 
 ### Screenshot
-  ![][./desing/desktop-design.jpg]
-  ![](./desing/active-states.jpg)
-  ![](./desing/complete-state-desktop.jpg)
-  ![](./desing/mobile-desing.jpg)
-  ![](./desing/complete-state-mobile.jpg)
+  ![](./design/desktop-design.jpg)
+  ![](./design/active-states.jpg)
+  ![](./design/complete-state-desktop.jpg)
+  ![](./design/mobile-desing.jpg)
+  ![](./design/complete-state-mobile.jpg)
 
 ### Links
 
