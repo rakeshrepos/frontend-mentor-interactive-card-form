@@ -31,7 +31,7 @@ Users should be able to:
   ![](./design/desktop-design.jpg)
   ![](./design/active-states.jpg)
   ![](./design/complete-state-desktop.jpg)
-  ![](./design/mobile-desing.jpg)
+  ![](./design/mobile-design.jpg)
   ![](./design/complete-state-mobile.jpg)
 
 ### Links
