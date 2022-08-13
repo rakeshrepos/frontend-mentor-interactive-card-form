@@ -1,0 +1,184 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Space Grotesk', sans-serif;;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+}
+
+.left__wrapper{
+	width: 25%;
+	height: 100vh;
+	background-image: url('../images/bg-main-desktop.png');
+}
+
+.card__front{
+	background-image: url('../images/bg-card-front.png');
+	padding: 20px;
+	position: absolute;
+	background-size: 100% 100%;
+	left: 100px;
+	top: 100px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+}
+
+.dots{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.dot{
+	width: 35px;
+	height: 35px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.card__back{
+	background-image: url('../images/bg-card-back.png');
+	position: absolute;
+	background-size: 100% 100%;
+	width: 325px;
+	height: 200px;
+	left: 120px;
+	top: 300px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+}
+
+
+
+.circle{
+	width: 20px;
+	height: 20px;
+	border: 2px solid white;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.number{
+	color: white;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.details{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.details p{
+	color: white;
+	font-size: 10px;
+	margin-top: 15px;
+}
+
+.right__wrapper{
+	width: 75%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box p{
+	color: #13071b;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+input[type='text']{
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #8e8593;
+}
+input[name='holdername'], input[name='cardnumber']{
+	width: 350px;
+}
+
+.box__wrapper{
+	display: flex;
+	flex-direction: row;
+}
+
+input[name='month'],input[name='year']{
+	width: 40px;
+}
+
+.cvc{
+	margin-left: 20px;
+}
+
+input[name='cvc']{
+	width: 191px;
+}
+
+button{
+	background-color: #13071b;
+	border: 1px;
+	width: 370px;
+	margin-top: 20px;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.error{
+	color: red;
+	font-size: 12px;
+}
+
+.success{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.success p{
+	color: #8e8593;
+}
+
+@media only screen and (max-width: 375px) {
+	.container{
+  		flex-direction: column;
+  	}
+
+  	.left__wrapper{
+		width: 100vw;
+		height: 200px;
+		background-image: url('../images/bg-main-mobile.png');
+		background-size: cover;
+	}
+
+	.card__front{
+		left: 10px;
+		z-index: 2;
+	}
+
+	.card__back{
+		top: 10px;
+		left: 40px;
+		z-index: 1;
+	}
+
+	.right__wrapper{
+		margin-top: 100px;
+		width: 100%;
+	}
+
+	input[name='holdername'], input[name='cardnumber']{
+		width: 300px;
+	}
+
+	input[name='cvc']{
+		width: 140px;
+	}
+
+	button{
+		width: 318px;
+	}
+}
